@@ -1,14 +1,10 @@
-import { ceil, floor, min } from "#utils/general";
+import { ceil, floor, min } from "js_base_general";
 
 
 export default (
     (pos, ut) => function(e) {
-        
-        
-        
         var
-
-            t,
+            t = null,
 
             moveCursor = (e, pos, ut, r) => {
                 var

@@ -1,7 +1,14 @@
 {
     "name": "js_base_front",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "main": "./src/index.js",
+    "type": "module",
+    "imports": {
+        "#utils/front": "./src/index.js"
+    },
     "scripts": {},
-    "license": "MIT"
-}  
+    "license": "MIT",
+    "dependencies": {
+        "js_base_general": "^1.0.1"
+    }
+}

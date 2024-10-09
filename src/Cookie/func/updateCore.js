@@ -1,4 +1,3 @@
-import { D, now } from "#utils/general";
 
 
 export default (
@@ -21,8 +20,8 @@ export default (
                 ( e || "" )
                 && (
                     (
-                        new D(
-                            now() + e
+                        new Date(
+                            Date.now() + e
                         )
                     )
                     .toGMTString()

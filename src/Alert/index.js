@@ -1,5 +1,4 @@
-import {Cookie} from '#utils/front';
-import {now} from "#utils/general";
+import {cookieDelete} from '#utils/front';
 
 import actn from './actn.js';
 import Confirm from './Confirm.js';
@@ -16,7 +15,7 @@ var Alert = (cb) => {
 
         cl = (
             actn(
-                (id = now().toString()),
+                (id = Date.now().toString()),
                 (l = document.getElementById("alert")),
                 "alert",
                 cb
@@ -37,7 +36,7 @@ var Alert = (cb) => {
 
 Alert.removeAt = function() {
     return (
-        Cookie.delete("at", document.cookie),
+        cookieDelete("at", document.cookie),
         this.checkAn()
     )
 }
@@ -45,11 +44,11 @@ Alert.removeAt = function() {
 Alert.checkAn = function() {
     return (
         (
-            (Cookie.get("an", document.cookie) === "1")
+            cookieGet("an", document.cookie) === "1"
             || undefined
         )
         && (
-            Cookie.delete("an", document.cookie),
+            cookieDelete("an", document.cookie),
             Alert("unlog")
         )
     );

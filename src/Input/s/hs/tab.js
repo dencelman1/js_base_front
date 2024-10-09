@@ -1,5 +1,5 @@
 import {do_} from "./hs.js";
-import { max } from "#utils/general";
+import { max } from "js_base_general";
 
 export default do_(
     (e, pos, ut) => {

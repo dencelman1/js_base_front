@@ -1,4 +1,3 @@
-import { now } from '#utils/general';
 import actn from './actn.js';
 
 
@@ -9,7 +8,7 @@ export default (
             id = "",
             
             cl = actn(
-                (id = now().toString()),
+                (id = Date.now().toString()),
                 (l = document.getElementById("alert")),
                 "prompt",
                 (e) => cb(e, undefined)

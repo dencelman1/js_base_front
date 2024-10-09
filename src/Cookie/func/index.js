@@ -1,7 +1,7 @@
-export {default as delete} from './delete.js';
-export {default as exist} from './exist.js';
-export {default as get} from './get.js';
+export {default as cookieDelete} from './delete.js';
+export {default as cookieExist} from './exist.js';
+export {default as cookieGet} from './get.js';
 
-export {default as toValue} from './toValue.js';
-export {default as update} from './update.js';
-export {default as updateCore} from './updateCore.js';
+export {default as cookieToValue} from './toValue.js';
+export {default as cookieUpdate} from './update.js';
+export {default as cookieUpdateCore} from './updateCore.js';
